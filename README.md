@@ -7,13 +7,13 @@ El siguiente proyecto es un sencillo examen que evalua el desarrollo fullstack c
 Clonar el repositorio.
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/kradde/react-exam.git
 ```
 
 Ir a la carpeta del proyecto
 
 ```bash
-  cd my-project
+  cd react-exam
 ```
 
 #### Backend
@@ -57,4 +57,4 @@ npm run dev
 ```
 
 Se ejecutará en el puerto **5173**, por lo que debe abrir el navegador y entrar a **http://localhost:5173** para visitar el sitio en local.
-![Home Page](/screenshots/homepage.jpg?raw=true 'Optional Title')
+![Home Page](/screenshots/homepage.png?raw=true 'Optional Title')
