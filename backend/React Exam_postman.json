@@ -1,0 +1,163 @@
+{
+    "info": {
+        "_postman_id": "bdb2e443-932e-4107-a431-d1ff55591454",
+        "name": "React Exam",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Posts",
+            "item": [
+                {
+                    "name": "getPosts",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:9000/api/posts?q=lorem",
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "lorem"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "posts"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000"
+                        }
+                    }
+                },
+                {
+                    "name": "getPost",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:9000/api/posts/:id",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "653196a0f177f31447e60a39"
+                                }
+                            ],
+                            "path": [
+                                "api",
+                                "posts",
+                                ":id"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000"
+                        }
+                    }
+                },
+                {
+                    "name": "createPost",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:9000/api/posts/",
+                            "path": [
+                                "api",
+                                "posts"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\": \"title2\",\n  \"author\": \"Alex Garcia\",\n  \"content\": \"Lorem ipsum dolor sit amet consectetur\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "updatePost",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:9000/api/posts/:id",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "653196a0f177f31447e60a39"
+                                }
+                            ],
+                            "path": [
+                                "api",
+                                "posts",
+                                ":id"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\": \"titleA\",\n  \"content\": \"Some text for the content!!\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "deletePost",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:9000/api/posts/:id",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "65319656f177f31447e60a34"
+                                }
+                            ],
+                            "path": [
+                                "api",
+                                "posts",
+                                ":id"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\": \"title1\",\n  \"author\": \"Alex Garcia\",\n  \"content\": \"Some text for the content!!\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

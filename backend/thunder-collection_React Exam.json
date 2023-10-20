@@ -1,0 +1,126 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "React Exam",
+    "dateExported": "2023-10-20T23:01:26.826Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "Posts",
+            "containerId": "",
+            "created": "2023-10-19T20:23:13.684Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "55b5d218-67cd-4d99-8475-1c86170fe8d2",
+            "colId": "d335fb14-8e2d-4abd-8608-075472685b07",
+            "containerId": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "getPosts",
+            "url": "http://localhost:9000/api/posts?q=lorem",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-19T20:23:27.670Z",
+            "modified": "2023-10-20T18:13:21.864Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "lorem",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a84aecdd-55e7-4e9d-83f7-3e01430a9d53",
+            "colId": "d335fb14-8e2d-4abd-8608-075472685b07",
+            "containerId": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "getPost",
+            "url": "http://localhost:9000/api/posts/{id}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-19T20:24:28.862Z",
+            "modified": "2023-10-19T21:15:35.709Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "653196a0f177f31447e60a39",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f79ae726-6514-45cb-81f9-3fc18c473c2d",
+            "colId": "d335fb14-8e2d-4abd-8608-075472685b07",
+            "containerId": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "createPost",
+            "url": "http://localhost:9000/api/posts/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-19T20:37:49.727Z",
+            "modified": "2023-10-19T21:09:46.000Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"title2\",\n  \"author\": \"Alex Garcia\",\n  \"content\": \"Lorem ipsum dolor sit amet consectetur\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a983e32f-3589-47aa-bf0e-8da7d44c0d8c",
+            "colId": "d335fb14-8e2d-4abd-8608-075472685b07",
+            "containerId": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "updatePost",
+            "url": "http://localhost:9000/api/posts/{id}",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-19T20:47:22.361Z",
+            "modified": "2023-10-19T21:35:31.513Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "653196a0f177f31447e60a39",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"titleA\",\n  \"content\": \"Some text for the content!!\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ade019a0-7b3d-4e19-b102-f7bce91057af",
+            "colId": "d335fb14-8e2d-4abd-8608-075472685b07",
+            "containerId": "242bb295-d65e-4cdd-b77a-0aa680366f00",
+            "name": "deletePost",
+            "url": "http://localhost:9000/api/posts/{id}",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-10-19T20:48:50.260Z",
+            "modified": "2023-10-19T20:50:08.206Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "65319656f177f31447e60a34",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"title1\",\n  \"author\": \"Alex Garcia\",\n  \"content\": \"Some text for the content!!\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
